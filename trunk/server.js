@@ -26,6 +26,8 @@ function start(route) {
         console.log(topScorers);
 
 
+
+
         // MUSTACHE.JS PRACTICE
         var view = {
             title: "Jeff",
