@@ -1,14 +1,24 @@
+var http = require('http');
+var request = require('request');
+var render = require('../custom_modules/render.js');
 
 /*
  * GET home page.
  */
+exports.homepage = function (req, res) {
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Hello world! This is HTML5 Boilerplate.' });
+    render.renderHomepage( res, null );
+//    request({
+//        headers: {'content-type' : 'application/json'},
+//        url: "http://www.mycinsay.com/services/rest/categoryLoad/",
+//        method: "POST",
+//        body: '{"maxResults":9999,"publicCategoryOnly":true}'
+//    }, function(error, response, body) {
+//
+//        render.renderHomepage( res, body );
+//
+//    });
+
 };
 
-
-exports.secondpage = function(req, res){
-  res.render('secondpage', { title: 'Second page of Hello world! This is HTML5 Boilerplate.' });
-};
 
