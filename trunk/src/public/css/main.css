@@ -20,7 +20,7 @@ textarea {
 
 body {
     font-size: 1em;
-    line-height: 1.4;
+    /*line-height: 1.4;*/
 }
 
 /*
@@ -89,9 +89,181 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*------------------------------------------------------------
+                    RESETS
+-------------------------------------------------------------*/
+body{
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+
+
+/*------------------------------------------------------------
+                    COMMON
+-------------------------------------------------------------*/
+.inner{
+    padding: 0 15px;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+.centered{
+    display:block;
+    text-align:center;
+}
+
+/*------------------------------------------------------------
+                    HEADER
+-------------------------------------------------------------*/
+.header{
+    padding:15px 0;
+    /*box-shadow:0 1px 4px rgba(0,0,0,0.4);*/
+}
+.header-home{
+    position:absolute;
+    z-index:99;
+    width:100%;
+}
+.navigation > li{
+    display:inline;
+}
+.navigation > li > a{
+    color:#fff;
+    text-decoration:none;
+    padding: 5px 15px;
+    line-height:1.4em;
+    font-weight:bold;
+    transition: all .3s;
+    border-radius:5px;
+}
+.navigation > li > a:hover{
+    color:#fff;
+    background:rgba(0,0,0,0.1);
+}
+
+/*------------------------------------------------------------
+                    HOMEPAGE
+-------------------------------------------------------------*/
+.main-slider{
+    height:440px;
+    background: #33bdfc;
+    /*background: #33bdfc url(/img/home-bg.jpg) center center;*/
+    overflow:hidden;
+    position:relative;
+    background: #68cef9;
+    background: -moz-linear-gradient(top,  #68cef9 0%, #33bdfc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68cef9), color-stop(100%,#33bdfc));
+    background: -webkit-linear-gradient(top,  #68cef9 0%,#33bdfc 100%);
+    background: -o-linear-gradient(top,  #68cef9 0%,#33bdfc 100%);
+    background: -ms-linear-gradient(top,  #68cef9 0%,#33bdfc 100%);
+    background: linear-gradient(to bottom,  #68cef9 0%,#33bdfc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68cef9', endColorstr='#33bdfc',GradientType=0 );
+}
+.main-slider .shadow{
+    position:absolute;
+    bottom:0;
+    height:6px;
+    width:100%;
+    z-index:99;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.2)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#91000000',GradientType=0 );
+}
+.main-slider .main-text{
+    margin-top:140px;
+}
+.main-slider h1{
+    font-family: 'Francois One';
+    margin:0;
+    color:white;
+    font-size:64px;
+    font-weight:bold;
+    letter-spacing:-2px;
+    text-shadow:1px 1px 3px rgba(0,0,0,0.4);
+}
+.main-slider h2{
+    margin:0;
+    font-size:34px;
+    color:white;
+    font-weight:300;
+}
+.pill{
+    width:30px;
+    height:30px;
+    border-radius:15px;
+    background:#f5f5f5;
+    overflow:auto;
+    box-shadow:inset 1px 1px 4px rgba(255,255,255,0.4), 1px 1px 8px rgba(0,0,0,0.4);
+    position:absolute;
+    transition: all .8s;
+    transition-timing-function:ease-in;
+    -webkit-transition-timing-function:ease-in;
+}
+.pill-slit{
+    background:rgba(0,0,0,0.1);
+    height:24px;
+    margin:3px 0 0 14px;
+    /*box-shadow:inset 1px 1px #aaa;*/
+    width:3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

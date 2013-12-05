@@ -1,3 +1,23 @@
-<h1> {{title}} </h1>
+<div class="main-slider">
+    <div class="main-text">
+        <h1 class="centered">Say hello to pyschobiotics...</h1>
+        <h2 class="centered">...and say goodbye to big pharma</h2>
+    </div>
+    <div class="shadow"></div>
+    <div class="pills">
+        <div class="pill">
+            <div class="pill-slit"></div>
+        </div>
+    </div>
 
-<a href="/secondpage">This is the homepage</a>
+</div>
+
+<script>
+    $(function() {
+       PSYBIO.ui.createHomepagePills({
+           'pillClass':'pill',
+           'slitClass': 'pill-slit',
+           'wrapperClass':'pills'
+       })
+    });
+</script>
